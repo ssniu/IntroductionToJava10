@@ -15,9 +15,19 @@ public class Exercise06{
  
  Scanner input = new Scanner(System.in);
  
- System.out.println("Enter a number between 0 and 1000: ");
+ System.out.print("Enter a number between 0 and 1000: ");
  int number = input.nextInt();
- int total,digit;
+ int total;
  
- total = number % 10;
+ //Calculate all digits and sum them
+ total = number % 10; // Compute the ones
+ number = number / 10;
+ total = total + number % 10;//Compute the tens
+ number = number / 10;
+ total = total + number;//Sum all digits
  
+ System.out.println("The sum of the digits is " + total);
+ }
+}
+
+  
