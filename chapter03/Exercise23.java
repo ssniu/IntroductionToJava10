@@ -21,10 +21,11 @@
      double x = input.nextDouble();
      double y = input.nextDouble();
 
+    //Make sure the points are inside the rectangle
      if(Math.abs(x) < 5 && Math.abs(y) < 2.5)
         System.out.println("Point" + "(" + x + "," + y + ")" + "is in the rectangle");
      else
         System.out.println("Point" + "(" + x + "," + y + ")" + "is not in the rectangle");
-     
+
    }
  }
