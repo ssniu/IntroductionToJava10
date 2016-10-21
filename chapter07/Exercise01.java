@@ -14,8 +14,8 @@
 
 import java.util.Scanner;
 
-public class Exercise_07_01 {
-	/** Main method */
+public class Exercise01 {
+	// Main method 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -35,12 +35,12 @@ public class Exercise_07_01 {
 
 		// Display results
 		for (int i = 0; i < scores.length; i++) {
-			System.out.println("Student " + i + " score is " + 
+			System.out.println("Student " + i + " score is " +
 				scores[i] + " and grade is " + grades[i]);
 		}
 	}
 
-	/** Method max returns the is highest score */
+	// Method max returns the is highest score
 	public static int max(int[] array) {
 		int max = array[0];
 		for (int i = 1; i < array.length; i++) {
@@ -50,7 +50,7 @@ public class Exercise_07_01 {
 		return max;
 	}
 
-	/** Method getGrade assigns grades based on grading scheme */
+	// Method getGrade assigns grades based on grading scheme
 	public static void getGrades(int[] scores, char[] grades) {
 		int best = max(scores);
 		for (int i = 0; i < scores.length; i++) {
@@ -65,5 +65,5 @@ public class Exercise_07_01 {
 			else
 				grades[i] = 'F';
 		}
-	} 
+	}
 }
