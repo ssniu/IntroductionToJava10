@@ -17,13 +17,16 @@
  class Exercise18{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-    //Prompt user enter the two characters: letter and number characters
+
+    //Prompt the user to enter the two characters: letter and number characters
      System.out.print("Enter two characters: ");
      String s = input.nextLine();
      char ch1 = s.charAt(0);
+
      //Convert the first letter to uppercase
      char ch1Up = Character.toUpperCase(ch1);
      char ch2 = s.charAt(1);
+     
      //Check the input is invalid or not
      if((Character.isLetter(ch1)) && (Character.isDigit(ch2))){
        //Ouput the result

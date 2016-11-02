@@ -16,16 +16,18 @@
  class Exercise10{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user input 10 numbers
+     //Prompt the user to enter 10 numbers
      System.out.print("Enter ten numbers: ");
      double[] arr = new double[10];
      for(int i = 0; i < 10; i++){
        arr[i] = input.nextDouble();
      }
+
      //Output the result of minimum number's index
      System.out.println("The smallest element's index is: " +
               indexOfSmallestElement(arr));
    }
+   
   //Find the index of minimum number in the array method
    public static int indexOfSmallestElement(double[] array){
      if(array.length <= 1)//If the array length is less than 1, return 0

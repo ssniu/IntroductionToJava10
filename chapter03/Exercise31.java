@@ -12,7 +12,7 @@
  class Exercise31{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Ask user enter the amount of dollars
+     //Prompt the user to enter the amount of dollars
      System.out.print("Enter the exchange rate from dollars to RMB: ");
      double e = input.nextDouble();
      // Convert dollars or RMB

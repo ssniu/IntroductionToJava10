@@ -13,8 +13,9 @@
 
  public class Exercise06{
    public static void main(String[] args){
+     //Print the header
      System.out.println("Miles       Kilometers   |    Kilometers    Miles");
-
+     //Print the table
      for(int i = 1, j = 20; i <= 10 && j <= 65; i++, j += 5){
        System.out.printf("%-10d%8.3f", i, i * 1.609);
        System.out.printf("   |%10d%10.3f\n", j, j * (12.430 / 20));

@@ -13,7 +13,7 @@
  class Exercise23{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter a string and a character
+     //Prompt the user to enter a string and a character
      System.out.print("Enter a string and a character (\"welcome\", \'e\'): ");
      String s = input.nextLine();
      //Find the index of comma to seperate the string ans character

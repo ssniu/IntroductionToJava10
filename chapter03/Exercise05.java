@@ -13,10 +13,10 @@
  public class Exercise05{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter today's day
      System.out.print("Enter today's day: (Sunday is 0, Monday is 1, ... Saturday is 6)");
      int i = input.nextInt();
-
+     //Prompt user enter number of days elapsed
      System.out.print("Enter the number of days elapsed since today:");
      int j = input.nextInt();
 
@@ -37,7 +37,7 @@
        default: System.out.print("Today is Saturday");
                break;
      }
-     //Output the future day by ((i + j) % 7)
+     //compute the future day by ((i + j) % 7)
      switch((i + j) % 7) {
        case 0: System.out.println(" and the future day is Sunday");
                break;

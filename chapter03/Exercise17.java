@@ -15,7 +15,7 @@ import java.util.Scanner;
 class Exercise17{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Inform user the number represents scissor rock and paper
+    //Prompt the user to enter the number represents scissor rock and paper
     System.out.print("Number 0, 1 and 2 represent scissor, rock and paper.\n");
     int computer = (int)(Math.random() * 3);// Generate random 0, 1 or 2
     // Prompt user enter 0, 1 or 2
@@ -23,6 +23,7 @@ class Exercise17{
     int gamer = input.nextInt();
     //Output the value from computer and user
     System.out.print("The computer is: ");
+
     switch(computer){
       case 0: System.out.print("scissor\n"); break;
       case 1: System.out.print("rock\n");break;
@@ -38,9 +39,12 @@ class Exercise17{
     //Compare the value from computer and user
     if(computer == gamer)
       System.out.println("We draw.");
-    else if((computer == 0 && gamer == 1) || (computer == 1 && gamer == 2) ||
-    (computer == 2 && gamer == 0))
+
+    else if((computer == 0 && gamer == 1) ||
+            (computer == 1 && gamer == 2) ||
+            (computer == 2 && gamer == 0))
       System.out.println("You win.");
+
     else
        System.out.println("Computer wins.");
   }

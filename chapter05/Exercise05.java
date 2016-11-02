@@ -13,7 +13,9 @@
 
  public class Exercise05{
    public static void main(String[] args){
+     //Print the header
      System.out.println("Kilograms    Pounds    |    Pounds      Kilograms");
+     //Print the table
      for(int i = 1, j = 20; i < 200 && j <= 515; i += 2, j += 5)
          {
           System.out.printf("%10d%8.1f", i, i * 2.2);

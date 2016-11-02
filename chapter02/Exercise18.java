@@ -15,7 +15,7 @@
 
  public class Exercise18{
    public static void main(String[] args){
-
+     //Output the table manually
      System.out.println("a    b     pow(a,b)");
      System.out.println("1    2     " + (int)Math.pow(1,2));
      System.out.println("2    3     " + (int)Math.pow(2,3));

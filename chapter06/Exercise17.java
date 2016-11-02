@@ -24,7 +24,7 @@ class Exercise17{
 
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Prompt user enter the number n
+    //Prompt the user to enter the number n
     System.out.print("Enter the number n ( n-by-n matrix): ");
     int m = input.nextInt();
     printMatrix(m);//Output the n-by-n matrix

@@ -12,13 +12,15 @@
  class Exercise27{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Prompt the user enter the point with x and y coordinates
+     // Prompt the user to enter the point with x and y coordinates
      System.out.print("Enter a point's x- and y- coordinates: ");
      double x1 = input.nextDouble();
      double y1 = input.nextDouble();
+
      // Compute the intersection point
      double x2 = (-x1 * (200 * 100)) / (-y1 * 200 - x1 * 100);
      double y2 = (-y1 * (200 * 100)) / (-y1 * 200 - x1 * 100);
+     
      // If the point coordinates smaller than intersection point
      System.out.println("The point is" + ((x1 > x2 || y1 > y2) ? " not " : " ")
                 + " in the triangle");

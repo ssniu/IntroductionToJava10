@@ -17,14 +17,14 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user to enter two coordinates
+     //Prompt the user to enter two coordinates
      System.out.print("Enter a point with two coordinates: ");
      double x = input.nextDouble();
      double y = input.nextDouble();
-
+     //compute the result
      int radius = 10;
      double distance = Math.pow((x * x + y * y), 0.5);
-
+     //If distance greater than 10, the point is out of the circle
      if(distance > 10)
         System.out.println("Point" + "( " + x + " , " + y + ")" + " is not in the circle");
      else

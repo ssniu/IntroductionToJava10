@@ -13,10 +13,11 @@
    public static void reverse(int number){
      String str = "";
      String n = number + "";
-
+     //Input numeric string
      for(int i = n.length() - 1; i >= 0; i--){
        str += n.charAt(i);
      }
+     //Output the string
      System.out.println(Integer.parseInt(str));
    }
 
@@ -25,6 +26,6 @@
 
      System.out.print("Enter a number: ");
      int number = input.nextInt();
-     reverse(number);
+     reverse(number);//invoke the reverse method
    }
  }

@@ -7,9 +7,8 @@
  public class Exercise13{
    public static void main(String[] args){
      int n = 0; // Initialize n to 0
-
+     //Find the largest integer n and n^3 less than 12000
      while(Math.pow(n, 3) < 12000){
-       
          n++;
      }
      System.out.println("The largest n such that n^3 is less than 12,000 is: " + n);

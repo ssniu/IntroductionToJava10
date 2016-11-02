@@ -24,6 +24,6 @@
    }
 
    public static void main(String[] args){
-     printChars('1', 'Z', 10);
+     printChars('1', 'Z', 10);//invoke printChars method
    }
  }

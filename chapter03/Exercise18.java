@@ -19,7 +19,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user to enter the weight
+     //Prompt the user to enter the weight
      System.out.print("Enter the weight of package: ");
       double weight = input.nextDouble();
 
@@ -37,7 +37,5 @@
 
      if(weight > 50)
        System.out.println("The package cannot be shipped.");
-
-
    }
  }

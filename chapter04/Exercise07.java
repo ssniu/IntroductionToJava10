@@ -14,7 +14,7 @@
  class Exercise07{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter radius
      System.out.print("Enter the radius of the bounding circle: ");
      int radius = input.nextInt();
 

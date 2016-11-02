@@ -14,7 +14,7 @@ public class Exercise06{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
-    // Ask users to input the weight, feet and inches
+    // Prompt the user to enter weight, feet and inches
     System.out.print("Enter weight in pounds: ");
     double weight = input.nextDouble();
 
@@ -34,10 +34,11 @@ public class Exercise06{
     weight *= KG_PER_POUND;
     feet *= METERS_PER_FOOT;
     inches *= METERS_PER_INCE;
-
+    //Compute the bmi
     double height = feet + inches;
     double bmi = weight / (height * height);
     System.out.println("BMI is " + bmi);
+    //Set various conditions and output the results
     if (bmi < 18.5)
        System.out.println("underweight");
     else if (bmi < 25)

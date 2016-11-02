@@ -33,7 +33,7 @@ import java.util.Scanner;
 
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the three sides
+     //Prompt the user to enter the three sides
      System.out.print("Enter the length of three sides: ");
      double side1 = input.nextDouble();
      double side2 = input.nextDouble();

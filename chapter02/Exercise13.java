@@ -20,19 +20,20 @@
  public class Exercise13{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the monthly saving amount
      System.out.print("Enter the monthly saving amount: ");
      int saving = input.nextInt();
      double total;
      double rate = 0.05 / 12;
-
+     //Compute the account value after 6 months
      total = saving * (1 + rate);
      total = (saving + total) * ( 1 + rate);
      total = (saving + total) * (1 + rate);
      total = (saving + total) * (1 + rate);
      total = (saving + total) * (1 + rate);
      total = (saving + total) * (1 + rate);
-     System.out.println("After the sixth month, the account value is $" + total);
-
+     //Output the final account value
+     System.out.println("After the sixth month, the account value is $"
+           + total);
    }
  }

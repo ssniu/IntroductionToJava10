@@ -14,13 +14,15 @@ import java.util.Scanner;
 class Exercise08{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Prompt user enter the 10 numbers
+    //Prompt the user to enter the 10 numbers
     System.out.print("Enter tem double values: ");
     double[] arr = new double[10];
+
     // Input 10 numbers
     for(int i = 0; i < 10; i++){
       arr[i] = input.nextDouble();
     }
+    
     //Output the result of average value
     System.out.println("The average of this array is: " + average(arr));
 

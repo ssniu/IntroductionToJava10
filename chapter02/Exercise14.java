@@ -14,7 +14,7 @@
  public class Exercise14{
    public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-
+    //Prompt the user to enter the weight in pounds
     System.out.print("Enter weight in pounds: ");
     double weight = input.nextDouble();
 
@@ -22,11 +22,12 @@
     double height = input.nextDouble();
 
     double bmi;
-
+    //compute the bmi
     weight = weight * 0.453;
     height = height * 0.0254;
 
     bmi = weight / (height * height);
+    //Output the BMI value
     System.out.println("BMI is " + bmi);
    }
  }

@@ -9,7 +9,7 @@
  class Exercise30{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Enter the number of offset
+     // Prompt the user to enter the number of offset
      System.out.print("Enter the time zone offset to GMT: ");
      int i = input.nextInt();
 
@@ -26,11 +26,12 @@
      long totalHours = totalMinutes / 60;
 
      long currentHours = totalHours % 24;
-     // Comptue the hours with offset
+     //Comptue the hours with offset
      currentHours = currentHours + i;
 
-     System.out.println("Current time is " + ((currentHours > 12) ? (currentHours - 12) : currentHours) +
-         " : " + currentMinutes + " : " + currentSecond + ((currentHours > 12) ? " PM " : " AM "));
-
+     System.out.println("Current time is " +
+               ((currentHours > 12) ? (currentHours - 12) : currentHours) +
+                " : " + currentMinutes + " : " + currentSecond +
+               ((currentHours > 12) ? " PM " : " AM "));
    }
  }

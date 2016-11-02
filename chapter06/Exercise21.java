@@ -15,7 +15,7 @@
    //Main method
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the string
+     //Prompt the user to enter the string
      System.out.print("Enter a string: ");
      String s = input. nextLine();
      //Check if the character in the string is letter, convert it to uppercase

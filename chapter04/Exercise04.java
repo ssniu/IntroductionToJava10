@@ -13,7 +13,7 @@
  class Exercise04{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the side
      System.out.print("Enter the side:");
      double s = input.nextDouble();
      //Computet the area

@@ -12,7 +12,7 @@ import java.util.Scanner;
 
      System.out.print("Enter a string: ");
      String str = input.nextLine();
-
+     //Display the characters at odd positions
      for(int i = 0; i <= str.length() - 1; i += 2){
        char ch = str.charAt(i);
       System.out.print(ch);

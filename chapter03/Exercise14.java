@@ -14,7 +14,7 @@
  public class Exercise14{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Genearate a random boolean value
      Random rand = new Random();
      boolean coin = rand.nextBoolean();
      int i;
@@ -26,7 +26,7 @@
 
      System.out.print("Enter your guess: ");
      int guess = input.nextInt();
-
+     //If the guess equals the random boolean value, the guess is correct
      if (i == guess)
        System.out.println("Your guess is correct.");
      else

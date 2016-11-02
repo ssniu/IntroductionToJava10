@@ -13,7 +13,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user to enter the number of students
+     //Prompt the user to enter the number of students
      System.out.print("Enter the number of students:");
      int n = input.nextInt();
 
@@ -38,7 +38,7 @@
          highestScore = score;
          highestName = name;
        }
-
+       //Find the second highest score
         while(score != highestScore) {
           if(score >= secondHighestScore){
             secondHighestScore = score;

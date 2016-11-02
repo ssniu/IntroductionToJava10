@@ -24,7 +24,9 @@
  import java.util.Scanner;
 
  class Exercise07{
-   public static double futureInvestmentValue(double investmentAmount, double monthlyInterestRate, int years){
+   //futureInvestmentValue method
+   public static double futureInvestmentValue(double investmentAmount,
+                        double monthlyInterestRate, int years){
       return investmentAmount * Math.pow((1 + monthlyInterestRate), years * 12);
    }
 
@@ -39,10 +41,12 @@
      double monthlyInterestRate = annualInterestRate / 1200;
 
      System.out.println("Years  FutureValue");
-     for(int years = 1; years <= 30; years++){
 
+     for(int years = 1; years <= 30; years++){
         System.out.printf("%-10d", years);
-        System.out.printf("%11.2f\n", futureInvestmentValue(investmentAmount, monthlyInterestRate,years));
+        //Display the futureInvestmentValue
+        System.out.printf("%11.2f\n", futureInvestmentValue(investmentAmount,
+            monthlyInterestRate,years));
    }
  }
  }

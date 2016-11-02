@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Exercise03{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-
+    //Prompt the user to enter 5 numbers
     System.out.print("Enter a, b, c, d, e, f:");
     double a = input.nextDouble();
     double b = input.nextDouble();
@@ -20,12 +20,14 @@ public class Exercise03{
     double d = input.nextDouble();
     double e = input.nextDouble();
     double f = input.nextDouble();
-
+    //Compute the solution of equation
     double m, x, y;
     m = a * d - b * c;
+    //If ad - bc is 0; the equation has no solution
     if(m == 0)
        System.out.println("The equation has no solution");
     else {
+      //Compute the two solutions
       x = (e * d - b * f) / m;
       y = (a * f - e * c) / m;
       System.out.println("x is " + x + " and y is " + y);

@@ -13,7 +13,7 @@
  class Exercise14{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+    //Prompt user enter 5 numbers
      System.out.print("Enter 5 numbers: ");
      int[] nums = new int[5];
      for(int i = 0; i < 5; i++)

@@ -13,7 +13,7 @@
  class Exercise12{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the 10 numbers
+     //Prompt the user to enter the 10 numbers
      System.out.print("Enter the ten numbers: ");
      double[] arr = new double[10];
      for(int i = 0; i < 10; i++){

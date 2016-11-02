@@ -19,16 +19,16 @@
  public class Exercise01{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter a, b, c
      System.out.print("Enter a, b, c:");
      double a = input.nextDouble();
      double b = input.nextDouble();
      double c = input.nextDouble();
-
+     //Compute the value of d
      double d;
      d = b * b - 4 * a * c;
      double r1, r2;
-
+     //Set conditions to compute the root of equation
      if(d > 0) {
        r1 = (-b + Math.pow(d, 0.5)) / (2 * a);
        r2 = (-b - Math.pow(d, 0.5)) / (2 * a);

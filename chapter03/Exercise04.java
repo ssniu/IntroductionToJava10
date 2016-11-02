@@ -13,7 +13,7 @@
     // Generate random digit between 1 and 12
     // (int)(Math.random() * (max - min + 1) + min)
     int i = (int)(Math.random() * 12 + 1);
-
+    //Convert numbers to the name of month and output the result
     switch(i) {
       case 1: System.out.println("January");
               break;

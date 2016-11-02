@@ -15,14 +15,16 @@
 
      System.out.print("Enter a string: ");
      String str = input.nextLine();
-
+     //Define the variables to store the number of vowels and consonants
      int count1 = 0;
      int count2 = 0;
      for(int i = 0; i < str.length(); i++){
-
+       //Ignore the blank space
        if(str.charAt(i) != ' '){
 
-       if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u')
+       if(str.charAt(i) == 'a' || str.charAt(i) == 'e' ||
+          str.charAt(i) == 'i' || str.charAt(i) == 'o' ||
+          str.charAt(i) == 'u')
           count1++;
        else
           count2++;

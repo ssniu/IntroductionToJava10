@@ -22,14 +22,17 @@
    }
 
    public static void main(String[] args){
+     //The table header
      System.out.println("Feet         Meters        |       Meters          Feet");
      System.out.println("-------------------------------------------------------");
 
      for(double foot = 1.0, meters = 20.0; foot <= 10.0; foot++, meters += 5){
        System.out.printf("%-4.1f", foot);
+       //Invoke footToMeter methods
        System.out.printf("%12.3f", footToMeter(foot));
        System.out.print("        |          ");
        System.out.printf("%4.1f", meters);
+       //Invoke meterToFoot method
        System.out.printf("%12.3f\n", meterToFoot(meters));
      }
    }

@@ -17,7 +17,7 @@
    //Main method
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the password
+     //Prompt the user to enter the password
      System.out.print("Enter your password: ");
      String password = input.nextLine();
      //Using checkPassword method to test valid password

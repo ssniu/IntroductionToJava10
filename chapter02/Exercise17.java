@@ -22,17 +22,17 @@
  public class Exercise17{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the temperature value
      System.out.print("Enter the temperature in Fahrenheit between -58F and 41F:");
      double tempe = input.nextDouble();
 
      System.out.print("Enter the wind speed (>=2) in miles per hour:");
      double windSpeed = input.nextDouble();
-
+     //Compute the index
      double index;
-     index = 35.74 + 0.6215 * tempe - 35.74 * Math.pow(windSpeed, 0.16) + 0.4275 * tempe
-* Math.pow(windSpeed, 0.16);
-
+     index = 35.74 + 0.6215 * tempe - 35.74 * Math.pow(windSpeed, 0.16) +
+           0.4275 * tempe * Math.pow(windSpeed, 0.16);
+     //Output the index value
      System.out.println("The wind chill index is " + index);
    }
  }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 class Exercise04{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Pormpt user to enter the scores
+    //Prompt the user to enter the scores
     System.out.print("Enter the scores: (negative number to end input)");
     //Set the maximum scores array to 100
     int[] scores = new int[100];

@@ -12,11 +12,11 @@ import java.util.Scanner;
 public class Exercise11{
   public static void main(String[] args){
   Scanner input = new Scanner(System.in);
-
+  //Prompt the user to enter year value
   System.out.print("Enter the number of years: ");
   int years = input.nextInt();
 
-  double total = 312032486;
+   double total = 312032486;
    double numberOfBirth, numberOfDeath, numberOfIm, numberOfEach, time;
 
    // Convert year to second
@@ -24,11 +24,10 @@ public class Exercise11{
    numberOfBirth = time / 7.0;
    numberOfDeath = time / 13.0;
    numberOfIm = time / 45.0;
-
+   //Compute the population
    numberOfEach = numberOfBirth + numberOfIm - numberOfDeath;
    total += numberOfEach * years;
-
+   //Output the population
    System.out.println("The population in " + years + " years is " + total);
   }
  }
-    

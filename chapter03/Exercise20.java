@@ -16,7 +16,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user to enter temperature and wind speed
+     //Prompt the user to enter temperature and wind speed
      System.out.print("Enter the temperature: ");
      double temperature = input.nextDouble();
 
@@ -24,13 +24,14 @@
      double windSpeed = input.nextDouble();
 
      double index = 0;
-     //Set the valid input confition
+     //Set the valid input conditions
      if (temperature > 41 || temperature < -58 || windSpeed < 2)
         System.out.println("Invalid input");
      else {
-     index = 35.74 + 0.6215 * temperature - 35.74 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature
-* Math.pow(windSpeed, 0.16);
+     index = 35.74 + 0.6215 * temperature - 35.74 * Math.pow(windSpeed, 0.16) +
+            0.4275 * temperature * Math.pow(windSpeed, 0.16);
+
     System.out.println("The wind-chill temperature is " + index);
-  }
+      }
    }
  }

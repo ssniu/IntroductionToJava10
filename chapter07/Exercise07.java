@@ -12,9 +12,11 @@
      //Set two arrays to store the random numbers and the output results
      int[] rand = new int[100];
      int[] counts = new int[10];
+
      //Generate the array with random numbers
      for(int i = 0; i < 100; i++){
        rand[i] = (int)(Math.random() * 10);
+       
        //Store the number of occurences in counts array
        switch(rand[i]){
          case 0: counts[0]++; break;

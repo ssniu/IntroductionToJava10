@@ -23,7 +23,7 @@ class Exercise11{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
-    //Prompt user enter the ten numbers
+    //Prompt the user to enter the ten numbers
     System.out.print("Enter ten numbers: ");
     double[] arr = new double[10];
     //Store the ten numbers in arr

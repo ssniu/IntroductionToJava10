@@ -11,7 +11,7 @@
  public class Exercise08{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter 3 numbers
      System.out.print("Enter three numbers: ");
      int number1 = input.nextInt();
      int number2 = input.nextInt();
@@ -33,6 +33,7 @@
        number1 = number2;
        number2 = temp;
      }
+     //Output sorted numbers
      System.out.println("The non-decreasing order is :" + number1 + " " + number2 + " " + number3);
    }
  }

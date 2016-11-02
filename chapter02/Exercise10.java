@@ -17,18 +17,18 @@
  public class Exercise10{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the amout water
      System.out.print("Enter the amount of water in kilograms: ");
      double water = input.nextDouble();
-
+     //Prompt the user to enter the initial temperature
      System.out.print("Enter the initial temperature: ");
      double initialT = input.nextDouble();
-
+    //Prompt the user to enter the final temperature
      System.out.print("Enter the final temperature: ");
      double finalT = input.nextDouble();
-
+     //Compute the energy
      double energy = water * (finalT - initialT) * 4184;
-
+     //Output the energy value
      System.out.println("The energy needed is " + energy);
    }
  }

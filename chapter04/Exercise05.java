@@ -15,13 +15,13 @@
  class Exercise05{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter number of sides
      System.out.print("Enter the number of sides: ");
      double numberOfSides = input.nextDouble();
 
      System.out.print("Enter the side:");
      double s = input.nextDouble();
-
+     //Compute the area
      double area;
      area = (numberOfSides * s * s) / (4 * Math.tan(Math.PI/numberOfSides));
      System.out.println("The area of the polygon is " + area);

@@ -26,7 +26,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt the user to enter yea, month day
+     //Prompt the user to enter year, month and day
      System.out.print("Enter year: (e.g., 2012): ");
      int year = input.nextInt();
 
@@ -43,8 +43,9 @@
      }
 
      //Compute the day of the week
-     int h = (int)(day + 26 * (month + 1) / 10 + year % 100 + (year % 100) / 4 + (year / 100) / 4 + 5 * (year / 100)) % 7;
-
+     int h = (int)(day + 26 * (month + 1) / 10 + year % 100 +
+             (year % 100) / 4 + (year / 100) / 4 + 5 * (year / 100)) % 7;
+     //Outpuf the day of a week
      switch(h){
        case 0: System.out.println("Day of the week is Saturday"); break;
        case 1: System.out.println("Day of the week is Monday"); break;

@@ -17,10 +17,10 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user enter the length from the center to a vertex
+     //Prompt the user to enter the length from the center to a vertex
      System.out.print("Enter the length from the center to a vertex: ");
      double r = input.nextDouble();
-
+     //Compute the area
      double s = 2 * r * Math.sin(Math.PI / 5);
      double area = 5 * s * s / ( 4 * Math.tan(Math.PI / 5));
 

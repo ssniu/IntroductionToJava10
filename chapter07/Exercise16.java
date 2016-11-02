@@ -21,6 +21,7 @@
      //Generate the random key
      int key = (int)(Math.random() * 100000);
      System.out.print("The key is" + key);
+
      //Calculate the execution time for linear search
      long startTime = System.currentTimeMillis();
      int searchResult = linearSearch(randomList, key);
@@ -28,8 +29,10 @@
      long executionTime = endTime - startTime;
      System.out.println("The time for search by using linearSearch is: "
             + executionTime + "s");
+
      //Sort the random number list
      selectionSort(randomList);
+     
      //Calculate the execution time for binary search
      startTime = System.currentTimeMillis();
      searchResult = binarySearch(randomList, key);

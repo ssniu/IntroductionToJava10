@@ -13,7 +13,7 @@ import java.util.Scanner;
  class Exercise25{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Prompt user enter the milliseconds
+     //Prompt the user to enter the milliseconds
      System.out.print("Enter the milliseconds: ");
      long milliseconds = input.nextLong();
      //Output the string

@@ -14,10 +14,10 @@
 
      System.out.print("Enter a string: ");
      String str = input.nextLine();
-
+     //Initialize the number of uppercase letters
      int count = 0;
      for(int i = 0; i < str.length(); i++){
-
+       //If the letter is uppercase, count increment by 1
        if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z')
          count++;
      }

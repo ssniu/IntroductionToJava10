@@ -10,11 +10,13 @@
  class Exercise17{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the number of students, name and score
+
+     //Prompt the user to enter the number of students, name and score
      System.out.print("Enter the number of students: ");
      int numberOfStudents = input.nextInt();
      double[] score = new double[numberOfStudents];
      String[] name = new String[numberOfStudents];
+
      //Input the name and score of all students
      for(int i = 0; i < numberOfStudents; i++){
        System.out.print("\nStudents " + (i + 1) + " : ");
@@ -22,12 +24,14 @@
        System.out.print("\nScore: ");
        score[i] = input.nextDouble();
      }
+
      //Invoke the sort method
      sort(score, name);
      //Output the name string array
      for(String e: name)
        System.out.println(e);
    }
+   
    //Sort method
    public static void sort(double[] score, String[] name){
      for(int i = 0; i < score.length; i++){

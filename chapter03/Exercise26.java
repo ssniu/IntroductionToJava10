@@ -10,7 +10,7 @@
  class Exercise26{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Enter the number
+     // Prompt the user to enter an integer
      System.out.print("Enter an integer: ");
      int x = input.nextInt();
 

@@ -14,7 +14,7 @@
    //Main method
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter a string
+     //Prompt the user to enter a string
      System.out.print("Enter a string: ");
       String s = input.nextLine();
     //Output the number of letters in the string

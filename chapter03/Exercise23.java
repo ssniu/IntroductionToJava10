@@ -16,7 +16,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     //Prompt user enter the point coordinates
+     //Prompt the user to enter the point coordinates
      System.out.print("Enter a point with two coordinates: ");
      double x = input.nextDouble();
      double y = input.nextDouble();

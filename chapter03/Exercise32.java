@@ -18,7 +18,7 @@
  class Exercise32{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Input the coordinates of three points
+     // Prompt the user to enter the coordinates of three points
      System.out.print("Enter three points for p0, p1, and p2: ");
      double xp0 = input.nextDouble();
      double yp0 = input.nextDouble();
@@ -26,17 +26,21 @@
      double yp1 = input.nextDouble();
      double xp2 = input.nextDouble();
      double yp2 = input.nextDouble();
+
      //Computet the result of equation
      double i = (xp1 - xp0) * (yp2 - yp0) - (xp2 - xp0) * (yp1 - yp0);
-     //Three conditions to figure out the relationship between p2 and line 
+
+     //Three conditions to figure out the relationship between p2 and line
      if(i > 0)
         System.out.println("( " + xp2 + " , " + yp2 + ") is on the left side" +
            " of the line from ( " + xp0 + "," + yp0 + ") to (" +
            xp1 + " , " + yp1 + ")");
+
      else if( i == 0)
         System.out.println("( " + xp2 + " , " + yp2 + ") is on " +
         " the line from ( " + xp0 + "," + yp0 + ") to (" +
         xp1 + " , " + yp1 + ")");
+        
      else
         System.out.println("( " + xp2 + " , " + yp2 + ") is on the right side" +
         " of the line from ( " + xp0 + "," + yp0 + ") to (" +

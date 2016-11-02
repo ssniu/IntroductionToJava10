@@ -13,7 +13,14 @@
  public class Exercise22{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
-     
+     //Prompt the user to enter the total value
+     System.out.print("Enter the value $");
+     double total = input.nextDouble();
+     //Convert total to dollars and cents
+     double dollars = total / 100;
+     double cents = total % 100;
+     //Output the results in dollars and cents
+     System.out.println("The " + total + " represents " + dollars +
+             " dollars and " + cents + " cents");
    }
  }

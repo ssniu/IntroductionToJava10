@@ -15,7 +15,7 @@
  public class Exercise21{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the investment amount, interest rate and number of years
      System.out.print("Enter investment amount:");
      double investment = input.nextDouble();
 
@@ -30,7 +30,7 @@
      //Compute the total value
      double futureValue;
      futureValue = investment * Math.pow((1 + rate), years);
-
+     //Output the total value
      System.out.println("Accumulated value is $" + futureValue);
    }
  }

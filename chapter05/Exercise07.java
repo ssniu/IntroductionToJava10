@@ -17,12 +17,12 @@
      for(int i = 0; i < 10; i++)
         tuition += tuition * 0.05;
      tuitionTenYear = tuition;
-
+     //
      for(int i = 0; i < 4; i++)
        totalTuition += tuitionTenYear * (1 + 0.05);
 
-     System.out.println("The tuition in tenth year is " + tuitionTenYear + "total cost of four years" +
-        "worth of tuition after the tenth year" + totalTuition);
-
+     System.out.println("The tuition in tenth year is " + tuitionTenYear +
+             "total cost of four years" +  "worth of tuition after the tenth year"
+             + totalTuition);
    }
  }

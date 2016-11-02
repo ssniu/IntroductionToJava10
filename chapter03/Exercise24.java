@@ -9,12 +9,13 @@
 
  public class Exercise24{
    public static void main(String[] args){
+     //Generate random rank and suit
      int rank = (int)(Math.random() * (14 - 1) + 1);
 
      int suit = (int)(Math.random() * 4);
 
      System.out.print("The card you picked is ");
-
+     //Convert numbers to ranks
      switch(rank){
        case 1: System.out.print("Ace"); break;
        case 2: System.out.print(rank); break;
@@ -31,6 +32,7 @@
        case 13: System.out.print("King");
      }
      System.out.print(" of ");
+     //convert numbers to suits
      switch(suit){
        case 0: System.out.println("Clubs"); break;
        case 1: System.out.println("Diamonds"); break;

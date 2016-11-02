@@ -13,11 +13,13 @@ import java.util.Scanner;
  class Exercise15{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter all 10 numbers
+
+     //Prompt the user to enter all 10 numbers
      System.out.print("Enter 10 numbers: ");
      int[] nums = new int[10];
      for(int i = 0; i < nums.length; i++)
        nums[i] = input.nextInt();
+
      //Create a new array to store the distinct numbers
      int[] distinctListNumber = eliminateDuplicates(nums);
 
@@ -29,6 +31,7 @@ import java.util.Scanner;
      }
      System.out.println();
    }
+
    //Eliminate duplicated numbers in an array
    public static int[] eliminateDuplicates(int[] list){
      int[] distinctList = new int[list.length];
@@ -42,6 +45,7 @@ import java.util.Scanner;
      }
      return distinctList;
    }
+   
    //Linear search method to find each element
    public static int linearSearch(int[] array, int key){
      for(int i = 0; i < array.length; i++){

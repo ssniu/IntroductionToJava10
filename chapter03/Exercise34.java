@@ -13,7 +13,7 @@
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
 
-     // Input the coordinates of three points
+     //Prompt the user  to enter the coordinates of three points
      System.out.print("Enter three points for p0, p1, and p2: ");
      double xp0 = input.nextDouble();
      double yp0 = input.nextDouble();
@@ -21,8 +21,10 @@
      double yp1 = input.nextDouble();
      double xp2 = input.nextDouble();
      double yp2 = input.nextDouble();
+
      //Computet the result of equation
      double i = (xp1 - xp0) * (yp2 - yp0) - (xp2 - xp0) * (yp1 - yp0);
+     
      //Two conditions to make sure whether p2 is on the line or not
     if( i == 0)
         System.out.println("( " + xp2 + " , " + yp2 + ") is on " +
