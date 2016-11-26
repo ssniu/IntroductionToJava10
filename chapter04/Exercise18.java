@@ -26,7 +26,7 @@
      //Convert the first letter to uppercase
      char ch1Up = Character.toUpperCase(ch1);
      char ch2 = s.charAt(1);
-     
+
      //Check the input is invalid or not
      if((Character.isLetter(ch1)) && (Character.isDigit(ch2))){
        //Ouput the result
@@ -41,7 +41,7 @@
          case '2': System.out.print("Sophomore \n"); break;
          case '3': System.out.print("Junior \n"); break;
          case '4': System.out.print("Senior \n"); break;
-         default: System.out.print("Ivalid number character");
+         default: System.out.print("Invalid number character");
        }
      }
      else

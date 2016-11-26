@@ -24,14 +24,13 @@
 
    public static void main(String[] args){
      // Print the table header
-     System.out.println("Celsius       Fahrenheit      |           Fahrenheit        Celsius");
-     System.out.println("--------------------------------------------------------------");
+     System.out.printf("%-10s%15s%6s%15s%15s","Celsius","Fahrenheit", "|","Fahrenheit","Celsius");
+     System.out.println("\n--------------------------------------------------------------");
 
      //Print the table content
      for(double celsius = 40.0, fahrenheit = 120.0; celsius >= 31.0; celsius--, fahrenheit -= 10){
-       System.out.printf("%4.1f%15.1f", celsius, celsiusToFahrenheit(celsius));
-       System.out.print("             |          ");
-       System.out.printf("%5.1f%15.2f\n", fahrenheit, fahrenheitToCelsius(fahrenheit));
+       System.out.printf("\n%-15.1f%-10.1f%6s", celsius, celsiusToFahrenheit(celsius),"|");
+       System.out.printf("%6s%-5.1f%17.2f\n", " ",fahrenheit, fahrenheitToCelsius(fahrenheit));
      }
    }
  }

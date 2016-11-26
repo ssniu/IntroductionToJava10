@@ -29,11 +29,11 @@
 
    public static void main(String[] args){
      //Print the table header
-     System.out.println("salesAmount        Commmission");
-     System.out.println("------------------------------");
+     System.out.printf("%-15s%15s","salesAmount","Commmission");
+     System.out.println("\n------------------------------");
      // Print the table content
      for(double i = 10000; i <= 100000; i += 5000){
-       System.out.printf("%8.0f%17.1f\n", i, computeCommission(i));
+       System.out.printf("%-8.0f%17.1f\n", i, computeCommission(i));
      }
    }
  }

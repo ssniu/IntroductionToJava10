@@ -35,11 +35,12 @@
        }
        else
          System.out.println("The correct answer should be" + number1 + " + " + number2 + " = " + (number1 + number2));
-
+         //Loop condition
        count++;
+       //Output the correct answer
        output += "\n" + number1 + " + " + number2 + "=" + answer + ((number1 + number2 == answer) ? " correct" : " wrong");
      }
-
+     //Compute the test time for 10 additions 
      long endTime = System.currentTimeMillis();
      long testTime = endTime - startTime;
 

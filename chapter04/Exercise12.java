@@ -9,10 +9,12 @@
  class Exercise12{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the hexagon character
+
+     //Prompt the user to enter the hexagon character
      System.out.print("Enter a hex digit: ");
      String s = input.nextLine();
      char ch = s.charAt(0);
+     
      //If the input is valid value, convert it to binary value
      if((ch >= 'A' && ch <= 'F') || (ch >= 0 && ch <= 9)){
        System.out.println("The binary value is ");

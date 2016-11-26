@@ -13,10 +13,10 @@
 
  public class Exercise03{
    public static void main(String[] args){
-     System.out.println("Kilograms       pounds");//Print the header
+     System.out.printf("%10s%10s", "Kilograms", "Pounds");//Print the header
      //Create the table
      for(int i = 1; i < 200; i += 2){
-       System.out.printf("%-15d%6.1f\n", i, (i * 2.2));
+       System.out.printf("\n %-13d%6.1f", i, (i * 2.2));
 
      }
 

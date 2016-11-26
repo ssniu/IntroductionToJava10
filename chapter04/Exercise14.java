@@ -10,11 +10,13 @@ import java.util.Scanner;
 class Exercise14{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Prompt user enter the letter
+
+    //Prompt the user to enter the letter
     System.out.print("Enter a letter grade: ");
     String s = input.nextLine();
     char ch = s.charAt(0);
     ch = Character.toUpperCase(ch);//Convert all letters to uppercase
+    
     //Convert letter to a number
       switch(ch){
         case 'A': System.out.println("The numeric value for grade " + ch + " is " + 4);break;

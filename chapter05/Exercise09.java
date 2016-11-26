@@ -34,21 +34,21 @@
        int score = input.nextInt();
 
        //Find the highest score
-       if(score >= highestScore) {
+       if(score > highestScore) {
+         secondHighestScore = highestScore;
+         secondHighestName = secondHighestName;
          highestScore = score;
          highestName = name;
        }
-       //Find the second highest score
-        while(score != highestScore) {
-          if(score >= secondHighestScore){
-            secondHighestScore = score;
-            secondHighestName = name;
-
+       //If the score smaller than highest score but bigger than second highest score
+       else if(score > secondHighestScore){
+         secondHighestScore = score;
+         secondHighestName = name;
+       }
      }
-   }
-   }
-    System.out.println("Student with highest score is: " + highestName);
-    System.out.println("The student with second highest score is: " + secondHighestName);
-
-   }
+    System.out.println("Student with highest score is: " + highestName +
+                  "the score is " + highestScore);
+    System.out.println("The student with second highest score is: " + secondHighestName
+                + "the second highestScore is " + secondHighestScore);
+ }
  }

@@ -17,12 +17,12 @@ import java.util.Scanner;
 		// Receive the amount
 		System.out.print("Enter an amount, for example 11.56: ");
 		String amount = input.nextLine();
-
+    int k = amount.indexOf('.');
 		// Extract number of dollars
-		String numberOfOneDollars = amount.substring(0, amount.indexOf('.'));
+		int numberOfOneDollars = Integer.parseInt(amount.substring(0, k));
 
 		// Extract cents
-		int cents = Integer.parseInt(amount.substring(amount.indexOf('.') + 1));
+		int cents = Integer.parseInt(amount.substring(k + 1));
 
 		// Find the number of quarters
 		int numberOfQuarters = cents / 25;
@@ -38,11 +38,11 @@ import java.util.Scanner;
 
 		// Display results
 		System.out.println("Your amount " + amount + " consists of\n "
-			+ numberOfOneDollars + " dollars\n "
-			+ numberOfQuarters + " quarters\n "
-			+ numberOfDimes + " dimes\n "
-			+ numberOfNickels + " nickels\n "
-			+ cents + " pennies\n "
+			+ numberOfOneDollars + (numberOfOneDollars > 1 ? " dollars\n" : " dollar\n")
+			+ numberOfQuarters + (numberOfQuarters > 1 ? " quarters\n" : " quarter\n")
+			+ numberOfDimes + (numberOfDimes > 1 ? " dimes\n" : " dime\n")
+			+ numberOfNickels + (numberOfNickels > 1 ? " nickels\n" : " nickel\n")
+			+ cents + (cents > 1 ? " pennies" : " penny\n")
 			);
 	}
 }

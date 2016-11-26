@@ -10,10 +10,12 @@
  class Exercise09{
     public static void main(String[] args){
        Scanner input = new Scanner(System.in);
-      //Prompt user enter the character
+
+      //Prompt the user to enter the character
        System.out.print("Enter a character: ");
        String str = input.nextLine();
        char ch = str.charAt(0);
+       
        //Casting character to integer
        int i = (int)ch;
        System.out.println("The Unicode for the character " +

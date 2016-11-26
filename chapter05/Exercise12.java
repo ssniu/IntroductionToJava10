@@ -7,9 +7,8 @@
  public class Exercise12{
    public static void main(String[] args){
      int n = 0; // Declare n and its initial value is 0
-
+     //Find smallest n such that n square bigger than 12000
      while(Math.pow(n, 2) <= 12000){
-       while(Math.pow(n, 2) < 12000)
          n++;
      }
      System.out.println("The smallest integer n such that n^2 " +

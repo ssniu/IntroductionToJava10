@@ -10,7 +10,7 @@ import java.util.Scanner;
 class Exercise22{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    //Prompt user enter two strings
+    //Prompt the user to enter two strings
     System.out.print("Enter string s1: ");
     String s1 = input.nextLine();
 

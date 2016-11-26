@@ -27,18 +27,17 @@
 
   public class Exercise06{
     public static void main(String[] args){
+      //New object of StopWatch class
     StopWatch stopWatch = new StopWatch();
-
+    //Invoke the methods of StopWatch
     int[] array = getArray();
     stopWatch.start();
-
     selectionSort(array);
-
     stopWatch.stop();
-
+    //Output the elapse time
     System.out.println("The exection time is: " + stopWatch.getElapsedTime());
   }
-
+  //Get an array that has 100000 elements
   public static int[] getArray(){
     int[] array = new int[100000];
     for(int i = 0; i < array.length; i++){
@@ -46,7 +45,7 @@
     }
     return array;
   }
-
+  //Selection sort method to sort 100000 elements in an array
   public static void selectionSort(int[] array){
     for(int i = 0; i < array.length; i++){
       int minNumber = array[i];
@@ -62,7 +61,6 @@
       if( i != minIndex){
         array[minIndex] = array[i];
         array[i] = minNumber;
-
       }
     }
   }
@@ -88,7 +86,7 @@
     public long getElapsedTime(){
       return (endTime - startTime);
     }
-    // Get startTime and endTime
+    // Get startTime and endTime, make the private date public access
     public long getStartTime(){
       return startTime;
     }

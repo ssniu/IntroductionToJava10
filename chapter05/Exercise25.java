@@ -9,7 +9,7 @@
  class Exercise25{
 
    public static void main(String[] args){
-
+     //Compute the PI value
      for(int n = 10000; n <= 100000; n += 10000){
        double sum = 0;
      for(int i = 1; i <= n; i++){

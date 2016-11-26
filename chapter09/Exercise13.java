@@ -55,7 +55,7 @@ import java.util.Scanner;
      Location maximum = new Location(array);
 
      System.out.println("The location of the largest element is" + maximum.maxValue +
-        " at (" + maximum.row + + " , " + maximum.column + ")");
+        " at (" + maximum.row +  " , " + maximum.column + ")");
    }
    // Methods that return the location of the largest element in two-dimensional array
    public static Location locationLargest(double[][] a){

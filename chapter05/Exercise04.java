@@ -13,11 +13,10 @@
 
  public class Exercise04{
    public static void main(String[] args){
-     System.out.println("Miles        Kilometers");//Print the header
+     System.out.printf("%-10s %10s","Miles","Kilometers");//Print the header
+     //Create the table
      for(int i = 1; i < 11; i++){
-       System.out.printf("%-15d%6.3f\n", i, i * 1.609);
-
+       System.out.printf("\n%-11d%-10.3f", i, i * 1.609);
      }
-
    }
  }

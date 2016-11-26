@@ -32,7 +32,7 @@
 
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-
+     //Prompt the user to enter the investment amount and annual interest
      System.out.print("The amount invested: ");
      double investmentAmount = input.nextDouble();
 
@@ -40,12 +40,12 @@
      double annualInterestRate = input.nextDouble();
      double monthlyInterestRate = annualInterestRate / 1200;
 
-     System.out.println("Years  FutureValue");
-
+     System.out.printf("%-10s%11s","Years","FutureValue");
+     //Display the result in a table
      for(int years = 1; years <= 30; years++){
-        System.out.printf("%-10d", years);
+        System.out.printf("\n%-7d", years);
         //Display the futureInvestmentValue
-        System.out.printf("%11.2f\n", futureInvestmentValue(investmentAmount,
+        System.out.printf("%14.2f\n", futureInvestmentValue(investmentAmount,
             monthlyInterestRate,years));
    }
  }

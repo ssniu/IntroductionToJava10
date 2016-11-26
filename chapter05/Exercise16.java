@@ -12,7 +12,7 @@
  class Exercise16{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     // Ask user enter an integer
+     //Prompt the user to enter an integer
      System.out.print("Enter an integer: ");
      int n = input.nextInt();
      int i = 2;//The factors start from 2

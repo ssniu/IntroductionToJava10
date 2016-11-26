@@ -14,7 +14,7 @@
  class Exercise23{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Pormpt user enter all information
+     //Prompt the user to enter all information
      System.out.print("Enter employee's name: ");
      String name = input.nextLine();
 
@@ -29,19 +29,21 @@
 
      System.out.print("Enter state tax withholding rate: ");
      double stateTax = input.nextDouble();
+
      //Compute the results
      double grossPay = hours * payRate;
      double fedWith = grossPay * taxRate;
      double stateWith = grossPay * stateTax;
      double totalDedu = fedWith + stateWith;
      double netPay = grossPay - totalDedu;
+
     //Output the results
      System.out.println("Employee Name: " + name);
      System.out.println("Hours Worked: " + hours);
      System.out.println("Pay Rate: " + payRate);
      System.out.println("Gross Pay: " + grossPay);
      System.out.println("Deductions: \n" + "  Federal Withholding (" + (taxRate * 100) +
-      "%): $" + fedWith);
+                         "%): $" + fedWith);
      System.out.println("  State Withholding (" + (stateTax * 100) + "%): $" + stateWith);
      System.out.println("  Total Deduction: $" + totalDedu);
     System.out.println("Net Pay: $" + netPay);

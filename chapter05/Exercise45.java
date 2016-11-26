@@ -16,7 +16,7 @@
  class Exercise45{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Ask user enter the ten numbers
+     //Prompt the user to enter the ten numbers
      System.out.print("Enter ten numbers: ");
      double total = 0;
      double mean = 0;

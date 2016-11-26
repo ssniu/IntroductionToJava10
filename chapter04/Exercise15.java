@@ -11,10 +11,12 @@
  class Exercise15{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-    //Prompt user enter a letter
+
+    //Prompt the user to enter a letter
      System.out.print("Enter a letter: ");
      String s = input.nextLine();
      char ch = s.charAt(0);
+     
      // Convert the input to uppercase letter
      char ch1 = Character.toUpperCase(ch);
      //If letter is greater than A and less than Z

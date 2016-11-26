@@ -27,13 +27,13 @@
 
    public static void main(String[] args){
      // Print the header
-     System.out.println("i                 m(i)");
-     System.out.println("----------------------");
+     System.out.printf("%-10s%10s","i","m(i)");
+     System.out.println("\n-------------------------");
      // Print the first line
-     System.out.printf("%3d%15.4f\n", 1, m(1));
+     System.out.printf("%-10d%12.4f\n", 1, m(1));
      // Print the content of table
      for(int i = 101; i <= 901; i += 100){
-       System.out.printf("%d%15.4f\n", i, m(i));
+       System.out.printf("%-10d%12.4f\n", i, m(i));
      }
    }
  }

@@ -9,9 +9,11 @@
  public class Exercise11{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //prompt user enter a number between 0 and 15
+
+     //Prompt the user to enter a number between 0 and 15
      System.out.print("enter a decimal value(0 to 15): ");
      int i = input.nextInt();
+     
      //Convert decimal number to a hexagon character
      if(i >= 0 && i <= 9)
         System.out.println("The hex value is " + i);

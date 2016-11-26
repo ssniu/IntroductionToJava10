@@ -9,9 +9,11 @@
  class Exercise08{
    public static void main(String[] args){
      Scanner input = new Scanner(System.in);
-     //Prompt user enter the ASCII code
+
+     //Prompt the user to enter the ASCII code
      System.out.print("Enter an ASCII code: ");
      int i = input.nextInt();
+     
      //Casting ASCII to character
      char ch = (char)i;
      System.out.println("The character for ASCII code " + i

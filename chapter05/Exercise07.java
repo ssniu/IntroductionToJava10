@@ -17,7 +17,7 @@
      for(int i = 0; i < 10; i++)
         tuition += tuition * 0.05;
      tuitionTenYear = tuition;
-     //
+     //Compute the four year's worth of tuition after tenth year
      for(int i = 0; i < 4; i++)
        totalTuition += tuitionTenYear * (1 + 0.05);
 

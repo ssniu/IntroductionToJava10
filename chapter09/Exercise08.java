@@ -116,21 +116,21 @@
   public class Exercise08{
     public static void main(String[] args){
       // Declares the data
-      final int SLOW = 1;
-      final int MEDIUM = 2;
-      final int FAST = 3;
+      //final int SLOW = 1;
+      //final int MEDIUM = 2;
+      //final int FAST = 3;
       // Create two objects
       Fan fan1 = new Fan();
       Fan fan2 = new Fan();
       //Assigning values to first object
-      fan1.setSpeed(FAST);
+      fan1.setSpeed(fan1.FAST);
       fan1.setRadius(10);
       fan1.setColor("yellow");
       fan1.setOn();
       // Output the result of toString method
       System.out.println(fan1.toString());
       // Assigning values to second object
-      fan2.setSpeed(MEDIUM);
+      fan2.setSpeed(fan2.MEDIUM);
       fan2.setRadius(5);
       fan2.setColor("blue");
       fan2.setOff();

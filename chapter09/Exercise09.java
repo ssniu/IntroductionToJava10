@@ -107,7 +107,7 @@
    public double getY(){
      return y;
    }
-
+   //Methods 
   public double getPerimeter(){
     return n * side;
   }

@@ -27,9 +27,67 @@
 
  /**************************************************
   *                      UML                       *
+  *                   Time                         *
   *------------------------------------------------*
-  * -hour: double                                  *
-  * -minutes: double                               *
-  * -second: double                                *
+  * -hour: long                                    *
+  * -minutes: long                                 *
+  * -second: long                                  *
   * +Time()                                        *
-  * 
+  * +Time(elapseTime: long)                        *
+  * +Time(hour:long,min:long,sec:long)             *
+  * +getHour(): long                               *
+  * +getMin(): long                                *
+  * +getSec(): long                                *
+  * +setTime(elapseTime: long)                     *
+  *                                                *
+  **************************************************/
+
+  class Time{
+    //Data fields
+    private long hour;
+    private long min;
+    private long sec;
+
+    Time(){
+       this(System.currentTimeMillis());//Represent the current time
+    }
+    //elapseTime constructor
+    Time(long eTime){
+      setTime(eTime);
+    }
+    //Constructor for specified data
+    Time(long h, long m, long s){
+      hour = h;
+      min = m;
+      sec = s;
+    }
+    //Getter methods
+    public long getHour(){
+      return hour;
+    }
+    public long getMin(){
+      return min;
+    }
+    public long getSec(){
+      return sec;
+    }
+    //setTime method
+    public void setTime(long eTime){
+			long totalSec = eTime / 1000;
+			sec = totalSec % 60;
+			min = totalSec / 60 % 60;
+			hour = totalSec / 60 / 60;
+			hour = hour % 24;
+   }
+}
+  public class Exercise01{
+    public static void main(String[] args){
+      Time time1 = new Time();
+      Time time2 = new Time(555550000);
+
+      System.out.println(time1.getHour() + ":" + time1.getMin() + ":"
+            + time1.getSec());
+      System.out.println(time2.getHour() + ":" + time2.getMin() + ":"
+                  + time2.getSec());
+    }
+  }

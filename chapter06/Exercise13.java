@@ -26,10 +26,10 @@
 
  public static void main(String[] args){
    // Print the table header
-   System.out.println("i          m(i)");
-   System.out.println("---------------");
+   System.out.printf("%-10s%10s","i","m(i)");
+   System.out.println("\n-------------------");
    // Print the table content
    for(int i = 0; i <= 20; i++)
-      System.out.printf("%2d%11.4f\n", i, sumSeries(i));
+      System.out.printf("%-10d%11.4f\n", i, sumSeries(i));
  }
 }

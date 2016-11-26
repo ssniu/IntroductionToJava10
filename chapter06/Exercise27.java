@@ -9,6 +9,7 @@
  */
 
  class Exercise27{
+   //isPrime method
    public static boolean isPrime(int n){
      for(int i = 2; i < n / 2; i++){
        if( n % i == 0)
@@ -16,7 +17,7 @@
      }
      return true;
    }
-
+   //reverse method
    public static int reverse(int n){
      String s = "";
      s = n + "";
@@ -27,20 +28,20 @@
      }
      return Integer.parseInt(reverse);
    }
-
-   public static boolean isPalindromic(int n){
+   //isNonpalindromic method
+   public static boolean isNonPalindromic(int n){
      return (n != reverse(n)) ? true : false;
    }
 
    public static void main(String[] args){
      final int NUMBER_PER_LINE = 10;
      final int TOTAL_NUMBER = 100;
-
+     //Initialize number of emirp and n
      int count = 0;
      int n = 10;
-
+     //Loop condition
      while(count < TOTAL_NUMBER){
-       if(isPrime(n) && isPrime(reverse(n)) && isPalindromic(n)){
+       if(isPrime(n) && isPrime(reverse(n)) && isNonPalindromic(n)){
          count++;
          System.out.print((count % NUMBER_PER_LINE == 0) ? n + " " + "\n" : n + " ");
        }

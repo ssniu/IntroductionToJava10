@@ -14,11 +14,11 @@
  public class Exercise06{
    public static void main(String[] args){
      //Print the header
-     System.out.println("Miles       Kilometers   |    Kilometers    Miles");
+     System.out.printf("%-10s%10s%6s%13s%10s","Miles","Kilometers","|","Kilometers","Miles");
      //Print the table
      for(int i = 1, j = 20; i <= 10 && j <= 65; i++, j += 5){
-       System.out.printf("%-10d%8.3f", i, i * 1.609);
-       System.out.printf("   |%10d%10.3f\n", j, j * (12.430 / 20));
+       System.out.printf("\n%-10d%-8.3f%8s", i, i * 1.609,"|");
+       System.out.printf("%3s%-8d%13.3f\n", " ",j, j * (12.430 / 20));
      }
    }
  }

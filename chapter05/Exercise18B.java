@@ -11,8 +11,8 @@ class Exercise18B{
   public static void main(String[] args){
 
     int n = 6;
+    //Print patterB
     for(int line = 1; line <= 6; line++){
-
       for(int m = 1; m <= n - line + 1; m++)
         System.out.print(m + " ");
       for(int k = line - 1; k < n ; k++)

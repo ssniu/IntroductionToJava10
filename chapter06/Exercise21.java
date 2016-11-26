@@ -17,7 +17,7 @@
      Scanner input = new Scanner(System.in);
      //Prompt the user to enter the string
      System.out.print("Enter a string: ");
-     String s = input. nextLine();
+     String s = input.nextLine();
      //Check if the character in the string is letter, convert it to uppercase
      //Using getNumber method to convert the uppercase letter to digit
      for(int i = 0; i < s.length(); i++){

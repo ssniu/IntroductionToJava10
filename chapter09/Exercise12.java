@@ -78,12 +78,12 @@ import java.util.Scanner;
      double x4 = input.nextDouble();
      double y4 = input.nextDouble();
      // Compute the value of a, b, c, d, e, f
-     double a = y1 - y1;
-     double b = x2 - x1;
+     double a = y1 - y2;
+     double b = x1 - x2;
      double c = y3 - y4;
-     double d = x4 - x3;
-     double e = x1 * (y1 - y2) - y1 * (x1 - x2);
-     double f = x3 * (y3 - y4) - y3 * (x3 - x4);
+     double d = x3 - x4;
+     double e = x1 * a - y1 * b;
+     double f = x3 * c - y3 * d;
      // Create a new object of LinearEquation class
      LinearEquation newLinear = new LinearEquation(a, b, c, d, e, f);
 

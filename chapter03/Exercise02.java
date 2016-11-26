@@ -20,7 +20,6 @@
      System.out.print("What is " + number1 + " + " + number2 + " + " + number3 + "?");
      int sum = input.nextInt();
      //Output the 3 numbers and their summation
-     System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + sum + " is " +
-     (number1 + number2 + number3 == sum));
+     System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + sum );
    }
  }

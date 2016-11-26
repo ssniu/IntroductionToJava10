@@ -52,6 +52,7 @@ import java.util.*;
 
 public class Exercise07{
   public static void main(String[] args){
+    //Test case
     Account accounts = new Account(1122, 20000);
 
     accounts.setAnnualInterestRate(4.5);
@@ -60,29 +61,26 @@ public class Exercise07{
 
     accounts.deposit(3000);
 
-    System.out.println("Account Id: " + accounts.getId() + "\nDate created: " +
-       accounts.getDateCreated() + "\nBalance: " + accounts.getBalance() + "\nMonthly interest: " +
+    System.out.println("Account Id: " + accounts.getId());
+    System.out.println("\nDate created: " + accounts.getDateCreated());
+    System.out.println("\nBalance: " + accounts.getBalance() + "\nMonthly interest: " +
           accounts.getMonthlyInterest());
     }
   }
-
-
-
-
-
 
   class Account{
     // Date fields
     private int id;
     private double balance;
     private double annualInterestRate;
-    private Date dateCreated;
+    //If delete the new java.util.Date(), NullPointerException will be thrown out
+    private java.util.Date dateCreated = new java.util.Date();
    // No-args constructor that creates a default account
     Account(){
       id = 0;
       balance = 0;
       annualInterestRate = 0;
-      dateCreated = new Date();
+      dateCreated = new java.util.Date();
     }
     // Contructor creates an account with specified id and initial balance
     Account(int id2, double balance2){
@@ -102,7 +100,6 @@ public class Exercise07{
       annualInterestRate = newAnnual;
     }
 
-
     //Accessor methods
     public int getId(){
       return id;
@@ -115,7 +112,11 @@ public class Exercise07{
     public double getAnnualInterestRate(){
       return annualInterestRate;
     }
-
+    /*
+    public java.util.Date getDateCreated(){
+    return dateCreated;
+  }
+    */
     public String getDateCreated(){
       return dateCreated.toString();
     }
