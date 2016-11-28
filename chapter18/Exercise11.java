@@ -12,6 +12,7 @@
  import java.util.Scanner;
 
  public class Exercise11{
+   //main() method
    public static void main(String[] args){
    Scanner input = new Scanner(System.in);
    System.out.print("Enter a number: ");
@@ -20,16 +21,15 @@
    System.out.println("The sum of all digits in the number " + n
        + " is " + sumDigits(n));
  }
-
+  //sumDigits() method
    public static int sumDigits(long n){
       return sumDigits(n, 0);
     }
-
+    //sumDigits() helper method
    public static int sumDigits(long n, int sum){
      if(n == 0)
         return sum;
      else
         return sumDigits(n / 10, sum + (int)(n % 10));
-
    }
  }

@@ -1,9 +1,9 @@
 /**
- * (Revising Listing 19.1) 
+ * (Revising Listing 19.1)
  * Revise the GenericStack class in Listing 19.1 to implement
  * it using an array rather than an ArrayList. You should check the array size
- * before adding a new element to the stack. If the array is full, 
- * create a new array that doubles the current array size and 
+ * before adding a new element to the stack. If the array is full,
+ * create a new array that doubles the current array size and
  * copy the elements from the current array to the new array.
  *
  */
@@ -34,7 +34,7 @@ class GenericStack<E> {
 		return o;
 	}
 
-	//Check the stack is empty or not 
+	//Check the stack is empty or not
 	public boolean isEmpty(){
 		return size == 0;
 	}
@@ -46,35 +46,36 @@ class GenericStack<E> {
 		list = tempList;
 	}
 
-	@Override 
+	@Override
 	public String toString(){
 		return "stack: " + list.toString();
 	}
 }
-
+//Test
 public class Exercise01{
 	public static void main(String[] args){
+		//Generate String stack
 		GenericStack<String> str = new GenericStack<>();
 		str.push("London");
 		str.push("Paris");
 		str.push("Berlin");
-
+		//Generate Integer stack
 		GenericStack<Integer> str2 = new GenericStack<>();
 		for(int i = 0; i < 100; i++){
 			str2.push(i + 1);
 		}
-
+		//Display the elements in stack 1
 		System.out.print("Stack 1: ");
 		while(!str.isEmpty()){
 			System.out.print(str.pop() + " ");
 		}
 		System.out.println();
-
+		//Display the elements in stack 2
 		System.out.println("Stack 2 : ");
 		for(int i = 1; !str2.isEmpty(); i++){
 			if( i % 10 == 0)
 				  System.out.println(str2.pop());
-			else 
+			else
 				 System.out.println(str2.pop() + " ");
 		}
 		System.out.println();
