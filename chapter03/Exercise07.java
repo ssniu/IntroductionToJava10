@@ -36,11 +36,13 @@
 
      int numberOfPennies = remainingAmount;
      //Output the results of changes
+
      System.out.println("Your amount" + amount + " consists of " +
-           numberOfDollars + (numberOfDollars > 1 ? " dollars " : " dollar ") +
-           numberOfQuarters + (numberOfQuarters > 1 ? " quarters " : " quarter ") +
-           numberOfDimes + (numberOfDimes > 1 ? " dimes " : " dime ") +
-           numberOfNickels + (numberOfNickels > 1 ? " nickels " : " nickel ") +
-           numberOfPennies + (numberOfNickels > 1 ? " pennies " : " penny "));
+           (numberOfDollars == 0 ? " " : (numberOfDollars + (numberOfDollars > 1 ? " dollars and " : " dollar and "))) +
+           (numberOfQuarters == 0 ? " " : (numberOfQuarters + (numberOfQuarters > 1 ? " quarters and " : " quarter and "))) +
+           (numberOfDimes == 0 ? " " : (numberOfDimes + (numberOfDimes > 1 ? " dimes and " : " dime and "))) +
+           (numberOfNickels == 0 ? " " : (numberOfNickels + (numberOfNickels > 1 ? " nickels and " : " nickel and "))) +
+           (numberOfPennies == 0 ? " " : (numberOfPennies + (numberOfPennies > 1 ? " pennies" : " penny"))));
    }
+
  }

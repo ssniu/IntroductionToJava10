@@ -6,13 +6,18 @@
  * Jack, Queen, King) and suit (Clubs, Diamonds, Hearts, Spades) of the card.
  *
  */
+import java.util.*;
 
  public class Exercise24{
    public static void main(String[] args){
      //Generate random rank and suit
-     int rank = (int)(Math.random() * (14 - 1) + 1);
+     /*int rank = (int)(Math.random() * (14 - 1) + 1);
 
-     int suit = (int)(Math.random() * 4);
+     int suit = (int)(Math.random() * 4);*/
+     Scanner input = new Scanner(System.in);
+     int i = input.nextInt();
+     int rank = i % 13;
+     int suit = i / 13;
 
      System.out.print("The card you picked is ");
      //Convert numbers to ranks

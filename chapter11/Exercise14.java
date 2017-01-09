@@ -42,10 +42,9 @@
    //union() method
    public static ArrayList<Integer> union(ArrayList<Integer> list1,
               ArrayList<Integer> list2){
-                ArrayList<Integer> list3 = list1;
 
                 for(int i = 0; i < list2.size(); i++){
-                  list3.add(list2.get(i));
+                  list1.add(list2.get(i));
                 }
                 return list1;
               }

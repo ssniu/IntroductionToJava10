@@ -27,9 +27,11 @@
    public static void shuffle(ArrayList<Integer> list){
      java.util.Collections.shuffle(list);
      //Output the list
-     for(int i = 0; i < list.size(); i++){
-       System.out.print(list.get(i) + " ");
-     }
+     //for(int i = 0; i < list.size(); i++){
+       //System.out.print(list.get(i) + " ");
+     //}
+     for(int i : list)
+       System.out.print(i + " ");
      System.out.println();
    }
  }

@@ -15,6 +15,7 @@
      //Prompt the user to enter a BigInteger
      Scanner input = new Scanner(System.in);
      System.out.print("Enter a number: ");
+
      String n = input.nextLine();
      //Output the factorial result of BigInteger
      System.out.println("Factorial of " + n + " is "
@@ -25,6 +26,7 @@
      if(n.equals(BigInteger.ZERO))//Base case
          return BigInteger.ONE;
      else
+     //n.subtract(BigInteger.ONE) returns a BigInteger whose value is (n - ONE)
        return n.multiply(factorial(n.subtract(BigInteger.ONE)));
    }
  }

@@ -36,7 +36,7 @@
        else
           temp[current3++] = list2[current2++];
      }
-     //Rest of the list1 to temp 
+     //Rest of the list1 to temp
      while(current1 < list1.length)
         temp[current3++] = list1[current1++];
         //Rest of the list2 to temp
@@ -51,3 +51,6 @@
         System.out.print(i + " ");
    }
  }
+//Time complexity: (n - 1) to compare the elements from the two subarrays
+// n moves to move elements to temporary array
+//Time complexity: O(nlogn)

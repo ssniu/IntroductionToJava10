@@ -16,9 +16,7 @@
      System.out.printf("%10s%10s", "Kilograms", "Pounds");//Print the header
      //Create the table
      for(int i = 1; i < 200; i += 2){
-       System.out.printf("\n %-13d%6.1f", i, (i * 2.2));
-
+       System.out.printf("\n %-10d%9.1f", i, (i * 2.2));
      }
-
    }
  }

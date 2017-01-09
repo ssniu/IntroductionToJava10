@@ -10,4 +10,22 @@
  *
  */
 
- 
+ public class Exercise19{
+   //isSorted() method
+   public static boolean isSorted(int[] list){
+     for(int i = 0; i < list.length; i++){
+       for(int j = i + 1; j < list.length; j++){
+         if(list[i] > list[j])
+            return false;
+       }
+     }
+     return true;
+   }
+   //Main method
+   public static void main(String[] args){
+     int[] arr = {2, 3, 4, 5, 1, 6};
+     int[] arr1 = {1, 3, 5, 7, 9};
+    //Output the result
+     System.out.println(isSorted(arr) + " " + isSorted(arr1));
+   }
+ }

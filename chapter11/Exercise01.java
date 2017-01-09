@@ -59,6 +59,7 @@
    * +toString(): String
    *
    *********************************************/
+
    import java.util.Scanner;
    //GeometricObject class
    class GeometricObject{

@@ -32,7 +32,7 @@
    //Fill() method
    public static void fill(int[][] array){
      for(int i = 0; i < array.length; i++){
-       for(int j = 0; j < array.length; j++){
+       for(int j = 0; j < array[0].length; j++){
          array[i][j] = (int)(Math.random() * 2);
        }
      }

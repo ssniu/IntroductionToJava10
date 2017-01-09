@@ -19,19 +19,21 @@ public class Exercise04{
     //Prompt the user to enter the integer objects inside list
     System.out.println("Enter the elements in this arraylist:");
     ArrayList<Integer> list = new ArrayList<>();
-    Integer num = input.nextInt();
+    int value;
+    
     //The input will end with 0
-    while(num.intValue() != 0){
-      list.add(num);
-      num = input.nextInt();
-    }
+    do{
+      value = input.nextInt();
+      list.add(value);
+
+    }while(value != 0);
     //Invoke max() method
-    System.out.println("The largest number in this list is " + max(list));
+    System.out.println("The largest number in this list is " + max(list).intValue());
   }
   //max() method
   public static Integer max(ArrayList<Integer> list){
     //If the list is null or size is 0, return null
-    if(list.size() == 0)
+    if(list.size() == 0 )
        return null;
     //Find the max object in the list
     Integer max = list.get(0);

@@ -14,11 +14,11 @@ import java.util.Scanner;
      //Prompt the user to enter a string
      System.out.print("Enter a string: ");
      String str = input.nextLine();
+     String s = "";
      //Display the string in reverse order
      for(int i = str.length() - 1; i >= 0; i--){
-       char strRe = str.charAt(i);
-
-     System.out.print(strRe);
+       s += str.charAt(i);
    }
+   System.out.print(s);
    }
  }

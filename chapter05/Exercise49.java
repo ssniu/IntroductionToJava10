@@ -21,7 +21,7 @@
      for(int i = 0; i < str.length(); i++){
        //Ignore the blank space
        if(str.charAt(i) != ' '){
-
+        str = str.toLowerCase();
        if(str.charAt(i) == 'a' || str.charAt(i) == 'e' ||
           str.charAt(i) == 'i' || str.charAt(i) == 'o' ||
           str.charAt(i) == 'u')

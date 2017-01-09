@@ -15,7 +15,7 @@
      Scanner input = new Scanner(System.in);
 
      System.out.print("Enter an integer, the input ends if it is 0: ");
-     int number = input.nextInt();
+     int number= input.nextInt();
 
      //Keep reading number until the input is 0
      double total = 0;
@@ -32,6 +32,7 @@
 
      // If number != 0, it counts the negative and positive numbers and compute the sum
      while(number != 0) {
+
        if(number > 0)
             positiveCount++;
        if(number < 0)
@@ -42,7 +43,7 @@
        }
 
      average = total / count; // Compute the average
-     
+
      System.out.println("The number of positives is " + positiveCount);
      System.out.println("the number of negatives is " + negativeCount);
      System.out.println("The total is " + total);
